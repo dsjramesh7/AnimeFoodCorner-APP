@@ -8,15 +8,16 @@ const ResturantMenu = () => {
   // console.log(resId);
 
   const resData = useRestaurantMenu(resId);
+  console.log(resData);
   // console.log("resData", resData[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards);
 
-  const categories =
-    resData[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
-      (c) =>
-        c?.card?.card?.["@type"] ===
-        "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-    );
-  console.log("category", categories);
+  // const categories =
+  //   resData[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+  //     (c) =>
+  //       c?.card?.card?.["@type"] ===
+  //       "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+  //   );
+  // console.log("category", categories);
 
   //created a custom hook for fetching data from api called useRestauranMenu hook
   /*

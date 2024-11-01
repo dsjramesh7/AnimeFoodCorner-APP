@@ -25,7 +25,7 @@ const Body = () => {
     //optional chaining
     const resturants =
       jsonData.data.cards[1].card.card.gridElements.infoWithStyle.restaurants;
-    console.log(resturants);
+    // console.log(resturants);
     setProductsData(resturants);
   };
 
