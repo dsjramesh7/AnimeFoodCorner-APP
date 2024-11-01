@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding-inline: 1rem;
+}
+
+.logo {
+  height: 100px;
+  width: 80px;
+}
+
+.menus {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.menus > .menu-item {
+  font-size: 1.5rem;
+}
+
+.res-comp {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.oneres-card {
+  margin: 2rem;
+  background-color: bisque;
+  border: 1px solid red;
+  width: 200px;
+}
+
+.oneres-card:hover {
+  border: 8px solid yellow;
+  cursor: pointer;
+}
+
+.filter-btn {
+  margin: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* shimmer loader */
+.shimmer-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card {
+  width: 250px;
+  height: 300px;
+  margin: 10px;
+  background-color: #f0f0f0;
+}
